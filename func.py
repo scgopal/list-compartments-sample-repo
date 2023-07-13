@@ -36,5 +36,5 @@ def list_compartments(signer):
     except Exception as ex:
         print("ERROR: Cannot access compartments", ex, flush=True)
         raise
-    resp = {"compartments": compartments}
+    resp = {"compartments in tenancy": compartments}
     return resp
